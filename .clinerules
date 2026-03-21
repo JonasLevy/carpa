@@ -1,0 +1,6 @@
+# Contexto do Projeto: Nishikigoi (Carpas Koi)
+- **Tema:** Site elegante e minimalista sobre Carpas Koi e suas variedades.
+- **Estética:** Fundo preto (#000000), design premium, alto contraste para as cores das carpas, tipografia sofisticada.
+- **Seção Hero:** Deve conter uma animação de uma Carpa Koi nadando sobre o fundo preto. (Preferência por Canvas API ou SVG animado para leveza).
+- **Stack:** HTML5 Semântico, CSS3 (Flexbox/Grid), JavaScript Moderno (ES6+). SEM FRAMEWORKS.
+- **Padrões:** Usar Variáveis CSS para cores e fontes. Manter o JS modular.
