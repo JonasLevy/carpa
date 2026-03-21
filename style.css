@@ -324,3 +324,46 @@ section {
     font-size: 2rem;
   }
 }
+
+/* === FOOTER === */
+.site-footer {
+  background: var(--bg-color);
+  border-top: 1px solid var(--header-border);
+  padding: 2.5rem 4vw;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-content p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+  transform: translateY(-4px);
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

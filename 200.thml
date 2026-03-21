@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site elegante e minimalista sobre Carpas Koi e suas variedades.">
+    <title>Nishikigoi - A Arte das Carpas Koi</title>
+    
+    <!-- Link para fontes elegantes (opcional, para uma tipografia premium) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nishikigoi</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#variedades">Variedades</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero: Onde a animação da carpa acontecerá -->
+        <section class="hero" id="hero">
+            <canvas id="heroCanvas"></canvas>
+            <div class="hero-content">
+                <h1>A Paz em Movimento</h1>
+                <p>Descubra a elegância milenar das Carpas Koi</p>
+            </div>
+        </section>
+
+        <!-- Variedades (Cards Glassmorphism) -->
+        <section class="variedades" id="variedades">
+            <h2 class="section-title">Principais Variedades</h2>
+            
+            <div class="cards-grid">
+                <!-- Kohaku -->
+                <div class="variety-card">
+                    <div class="card-image">
+                        <img src="assets/carpas/Kohaku.png" alt="Carpa Kohaku" class="koi-photo">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Kohaku</h3>
+                        <p>Corpo branco adornado por marcações vermelhas vivas. A icônica e principal de todas as variedades Nishikigoi.</p>
+                    </div>
+                </div>
+
+                <!-- Taisho Sanke -->
+                <div class="variety-card">
+                    <div class="card-image">
+                        <img src="assets/carpas/Taisho.png" alt="Carpa Sanke" class="koi-photo">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Taisho Sanke</h3>
+                        <p>Três cores: branco, vermelho e um profundo Sumi (pintas pretas elegantes), idealmente restritas ao corpo.</p>
+                    </div>
+                </div>
+
+                <!-- Showa -->
+                <div class="variety-card">
+                    <div class="card-image">
+                        <img src="assets/carpas/Showa.png" alt="Carpa Showa" class="koi-photo">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Showa Sanshoku</h3>
+                        <p>Base intensamente negra que sustenta os padrões vermelhos e brancos. Possuem o visual mais dramático no lago.</p>
+                    </div>
+                </div>
+
+                <!-- Ogon -->
+                <div class="variety-card">
+                    <div class="card-image">
+                        <img src="assets/carpas/Ogon.png" alt="Carpa Ogon" class="koi-photo">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Ogon</h3>
+                        <p>Cor única incandescente e imponente brilho metálico. Refletem as luzes de forma inconfundível.</p>
+                    </div>
+                </div>
+
+                <!-- Utsurimono -->
+                <div class="variety-card">
+                    <div class="card-image">
+                        <img src="assets/carpas/Utsurimono.png" alt="Carpa Utsuri" class="koi-photo">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Utsurimono</h3>
+                        <p>Corpo profundamente negro atravessado por marcações densas de uma única segunda cor (geralmente branco ou vermelho).</p>
+                    </div>
+                </div>
+
+                <!-- Bekko -->
+                <div class="variety-card">
+                    <div class="card-image">
+                        <img src="assets/carpas/Bekko.png" alt="Carpa Bekko" class="koi-photo">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Bekko</h3>
+                        <p>Fundo limpo servindo de palco para espalhadas pedrinhas de piche negro perfeitamente delineadas ao redor do corpo.</p>
+                    </div>
+                </div>
+
+                <!-- Asagi -->
+                <div class="variety-card">
+                    <div class="card-image">
+                        <img src="assets/carpas/Asagi.png" alt="Carpa Asagi" class="koi-photo">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Asagi</h3>
+                        <p>Beleza serena milenar: dorso cerúleo todo reticulado com contrastantes manchas em tons rubi ou abóbora pelas guelras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre a história -->
+        <section class="sobre" id="sobre">
+            <!-- Fundos do Carrossel (Z-index: 0) -->
+            <div class="carousel-backgrounds">
+                <div class="slide bg-slide-1 active"></div>
+                <div class="slide bg-slide-2"></div>
+            </div>
+
+            <!-- Painel de Leitura Glassmorphism (Z-index: 1) -->
+            <div class="sobre-content">
+                <h2>A Lenda e a História</h2>
+                <p>
+                    As carpas Koi, ou Nishikigoi, são símbolos reverenciados de perseverança, força e beleza. 
+                    Originárias de mutações genéticas naturais em carpas criadas no Japão durante o século XIX, 
+                    esses peixes magníficos rapidamente se transformaram em verdadeiras joias vivas. A lenda milenar 
+                    conta que a carpa que conseguir nadar contra a correnteza e alcançar o topo da cachoeira se transformará 
+                    em um poderoso dragão celestial, representando a superação de obstáculos e a conquista de grandes objetivos. 
+                    Hoje, com suas cores vibrantes e contrastantes, as Koi embelezam lagos ornamentais pelo mundo, 
+                    trazendo serenidade e um toque inigualável de arte contemplativa.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>
